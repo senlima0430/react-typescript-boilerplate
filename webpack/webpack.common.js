@@ -7,12 +7,15 @@ module.exports = {
     main: '/src/index.tsx',
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: '[name].bundle.js',
     publicPath: '/',
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      '@': path.resolve(__dirname, '../src'),
+    },
   },
   module: {
     rules: [

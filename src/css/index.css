@@ -1,6 +1,4 @@
-.app-logo {
-  width: 350px;
-  height: auto;
+.spin {
   animation: spin infinite 20s linear;
 }
 

@@ -1,12 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-let nextTodoId = 0
+import { todoItemType } from '@/types/todo'
 
-type todoItemType = {
-  id: number
-  text: string
-  completed: boolean
-}
+let nextTodoId = 0
 
 const initialState: todoItemType[] = []
 

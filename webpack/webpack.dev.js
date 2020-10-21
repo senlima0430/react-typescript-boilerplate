@@ -8,7 +8,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     historyApiFallback: true,
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, '/dist'),
     compress: true,
     hot: true,
     port: 3000,
